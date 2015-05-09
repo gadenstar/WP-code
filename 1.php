@@ -31,6 +31,37 @@ function Init_theme($oldthemename){
  * 博客：http://www.ludou.org/
  * http://www.ludou.org/add-admin-menu-in-wordpress.html
  * 最后修改：2011年01月26日
+ *
+ *add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function );
+ *$parent_slug
+ *      这个参数为WordPress内置菜单的文件名称或缩略名，这里我们通常采用菜单文件名的方式。传递这个参数，就说明要往这个顶级菜单添加子菜单，以上示例代码中传递的值为 tools.php ，对应工具顶级菜单，下面提供这个参数的所有值及其对应的顶级菜单：
+*
+* index.php：控制板
+* edit.php：文章
+* upload.php：媒体
+* link-manager.php：链接
+* edit.php?post_type=page：页面
+* edit-comments.php：评论
+* themes.php：主题
+* plugins.php：插件
+* users.php：用户
+* tools.php：工具
+* options-general.php：设置
+*$page_title
+ *    这个参数是子菜单的标题，将会显示在浏览器的标题栏。
+*$menu_title
+ *    这个是子菜单的名称，将会显示在侧边栏
+*$capability
+ *    用户权限，这个定义了具有哪些权限的用户会看到这个子菜单，具体的参数值，可以参考上面第一部分的顶级菜单的说明。
+*$menu_slug
+ *    子菜单的缩略名，请使用一个唯一的名称，英文形式。
+*$function
+ *    所有调用的函数名称，通过调用这个函数来显示这个子菜单页面的内容
+ *
+ *
+ *
+ *
+ *
  */
 
 // my_add_pages() 为 'admin_menu' 钩子的回调函数
