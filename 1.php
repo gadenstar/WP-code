@@ -29,6 +29,7 @@ function Init_theme($oldthemename){
  * 名称：WordPress后台添加顶级菜单
  * 作者：露兜
  * 博客：http://www.ludou.org/
+ * http://www.ludou.org/add-admin-menu-in-wordpress.html
  * 最后修改：2011年01月26日
  */
 
